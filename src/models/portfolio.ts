@@ -10,6 +10,14 @@ export interface PersonalInfo {
   location: string;
 }
 
+export interface Education {
+  institution: string;
+  degree: string;
+  field: string;
+  period: string;
+  gpa?: number;
+}
+
 export interface Experience {
   role: string;
   company: string;

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {
   Home,
+  GraduationCap,
   Briefcase,
   FolderCode,
   Trophy,
@@ -9,6 +10,7 @@ import {
 
 const navItems = [
   { id: "profile", label: "Profile", icon: Home },
+  { id: "education", label: "Education", icon: GraduationCap },
   { id: "experience", label: "Experience", icon: Briefcase },
   { id: "projects", label: "Projects", icon: FolderCode },
   { id: "competitions", label: "Competitions", icon: Trophy },

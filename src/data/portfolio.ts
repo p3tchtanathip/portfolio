@@ -1,4 +1,4 @@
-import type { Competition, Experience, PersonalInfo, Project, SkillCategory } from "@/models/portfolio";
+import type { Competition, Education, Experience, PersonalInfo, Project, SkillCategory } from "@/models/portfolio";
 import profile1 from "@/assets/profile_1.jpg";
 import profile2 from "@/assets/profile_2.jpg";
 import apalImage1 from "@/assets/apal_1.png";
@@ -21,6 +21,23 @@ export const personalInfo: PersonalInfo = {
   profiles: [profile1, profile2],
   location: "Bangkok, Thailand",
 };
+
+export const educations: Education[] = [
+  {
+    institution: "King mongkut's institute of technology ladkrabang",
+    degree: "Bachelor of Engineering",
+    field: "Computer Engineering",
+    period: "2022 - 2026",
+    gpa: 3.11
+  },
+  {
+    institution: "The Demonstration School of Bansomdejchaopraya Rajabhat University",
+    degree: "High School Diploma",
+    field: "Math - Science",
+    period: "2016 - 2022",
+    gpa: 3.60
+  }
+];
 
 export const experiences: Experience[] = [
   {
