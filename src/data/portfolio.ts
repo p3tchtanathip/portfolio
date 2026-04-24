@@ -1,4 +1,6 @@
 import type { Competition, Experience, PersonalInfo, Project, SkillCategory } from "@/models/portfolio";
+import profile1 from "@/assets/profile_1.jpg";
+import profile2 from "@/assets/profile_2.jpg";
 import apalImage1 from "@/assets/apal_1.png";
 import apalImage2 from "@/assets/apal_2.png";
 import apalImage3 from "@/assets/apal_3.png";
@@ -16,7 +18,7 @@ export const personalInfo: PersonalInfo = {
   github: "https://github.com/p3tchtanathip",
   linkedin: "https://linkedin.com/in/tanathip-pona-289589192",
   resume: "https://p3tchtanathip.github.io/resume/tanathip_resume.pdf",
-  profiles: ["/assets/profile_1.jpg", "/assets/profile_2.jpg"],
+  profiles: [profile1, profile2],
   location: "Bangkok, Thailand",
 };
 
