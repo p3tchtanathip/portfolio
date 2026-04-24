@@ -3,6 +3,9 @@ import apalImage1 from "@/assets/apal_1.png";
 import apalImage2 from "@/assets/apal_2.png";
 import apalImage3 from "@/assets/apal_3.png";
 import apalImage4 from "@/assets/apal_4.png";
+import eventgenda1 from "@/assets/eventgenda_1.png";
+import eventgenda2 from "@/assets/eventgenda_2.png";
+import eventgenda3 from "@/assets/eventgenda_3.png";
 import tdlsImage from "@/assets/tdls.png";
 
 export const personalInfo: PersonalInfo = {
@@ -55,7 +58,7 @@ export const projects: Project[] = [
     role: "Back-end Developer",
     period: "2024",
     tags: ["Node.js", "Express.js", "MongoDB"],
-    images: [""]
+    images: [eventgenda1, eventgenda2, eventgenda3]
   },
   {
     title: "TDLS Monitor",
