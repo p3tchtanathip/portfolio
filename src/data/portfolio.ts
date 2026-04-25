@@ -50,7 +50,7 @@ export const experiences: Experience[] = [
     role: "Freelance Developer",
     company: "AISIN AUTOPARTS (THAILAND) Co., Ltd.",
     period: "Sep 2025 - Feb 2026",
-    description: "Built a real-time monitoring dashboard in .NET (WinForms) integrating industrial controllers to stream production data.",
+    description: "Developed a machine monitoring dashboard using .NET (WinForms), integrating multiple nut-tightening controllers to collect and display torque and angle production data.",
   },
 ];
 
@@ -81,7 +81,7 @@ export const projects: Project[] = [
   },
   {
     title: "TDLS Monitor",
-    description: "Built a real-time monitoring dashboard in .NET (WinForms) integrating industrial controllers to stream production data. Designed data layer with SQL Server and Entity Framework Core for traceability and quality auditing.",
+    description: "Developed a machine monitoring dashboard using .NET (WinForms) and AntdUI, integrating multiple nut-tightening controllers to collect and display torque and angle production data. Designed data storage with SQL Server and Entity Framework Core, enabling status tracking and historical traceability for quality control in an automated assembly line.",
     role: "Developer",
     period: "2025",
     tags: ["C#", ".NET WinForms", "SQL Server", "EF Core"],
@@ -91,14 +91,14 @@ export const projects: Project[] = [
 
 export const competitions: Competition[] = [
   {
-    title: "ICPC Thailand National Competition",
-    description: "Represented Computer Engineering at KMITL in the ICPC Thailand National Competition.",
-    period: "Sep 2024"
+    title: "1st Place Winner - Tech Tournament Day 2026 #1",
+    description: "Competed in a software engineering workshop challenge, solving real-world algorithmic problems and presenting solutions to a panel of tech experts from Bangkok Bank",
+    period: "Apr 2026"
   },
   {
-    title: "Top 20 Finalist, Digital Youth Network Hackathon",
-    description: "Designed a web application prototype (Figma) addressing cyberbullying, enabling online mental health consultation.",
-    period: "Aug 2023"
+    title: "ICPC Thailand National Competition Contest",
+    description: "Represented KMITL's Computer Engineering department in ICPC Thailand, solving algorithmic problems.",
+    period: "Sep 2024"
   }
 ]
 
