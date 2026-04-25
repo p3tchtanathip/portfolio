@@ -5,6 +5,8 @@ import apalImage1 from "@/assets/apal_1.png";
 import apalImage2 from "@/assets/apal_2.png";
 import apalImage3 from "@/assets/apal_3.png";
 import apalImage4 from "@/assets/apal_4.png";
+import movieImage1 from "@/assets/movie_1.png";
+import movieImage2 from "@/assets/movie_2.png";
 import eventgenda1 from "@/assets/eventgenda_1.png";
 import eventgenda2 from "@/assets/eventgenda_2.png";
 import eventgenda3 from "@/assets/eventgenda_3.png";
@@ -69,7 +71,7 @@ export const projects: Project[] = [
     role: "Full-stack Developer",
     period: "2024",
     tags: ["C#", "ASP.NET Core MVC", "SignalR"],
-    images: [""]
+    images: [movieImage1, movieImage2]
   },
   {
     title: "Eventgenda",
