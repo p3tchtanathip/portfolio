@@ -16,7 +16,7 @@ export function EducationSection() {
                   <span className="text-sm text-muted-foreground">{edu.period}</span>
                 </div>
                 <p className="text-primary font-medium mb-1">{edu.degree} in {edu.field}</p>
-                <p className="text-sm text-muted-foreground">GPA: {edu.gpa.toFixed(2)}</p>
+                <p className="text-sm text-muted-foreground">GPA: {edu.gpa?.toFixed(2)}</p>
               </CardContent>
             </Card>
           ))}
