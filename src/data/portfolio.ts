@@ -101,7 +101,12 @@ export const competitions: Competition[] = [
     title: "ICPC Thailand National Competition Contest",
     description: "Represented KMITL's Computer Engineering department in ICPC Thailand, solving algorithmic problems.",
     period: "Sep 2024"
-  }
+  },
+  {
+    title: "Hackathon by Digital Youth Network",
+    description: "Develop my public speaking skills through pitching practice. I have experience in designing prototypes using Figma in grand final round.",
+    period: "August 2023"
+  },
 ]
 
 export const skills: SkillCategory[] = [
