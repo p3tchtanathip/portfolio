@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://p3tchtanathip.github.io/portfolio",
+  "homepage": "https://portfolio.p3tchtanathip.work",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
