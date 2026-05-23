@@ -1,5 +1,5 @@
 import type { Competition, Education, Experience, PersonalInfo, Project, SkillCategory } from "@/models/portfolio";
-import profile1 from "@/assets/profile_1.jpg";
+import profile1 from "@/assets/profile_1.png";
 import profile2 from "@/assets/profile_2.jpg";
 import apalImage1 from "@/assets/apal_1.png";
 import apalImage2 from "@/assets/apal_2.png";
@@ -11,14 +11,16 @@ import eventgenda1 from "@/assets/eventgenda_1.png";
 import eventgenda2 from "@/assets/eventgenda_2.png";
 import eventgenda3 from "@/assets/eventgenda_3.png";
 import tdlsImage from "@/assets/tdls.png";
+import walletImage1 from "@/assets/wallet_1.png";
+import walletImage2 from "@/assets/wallet_2.png";
 
 export const personalInfo: PersonalInfo = {
   name: "Tanathip Pona",
-  title: "Software Developer",
+  title: "Software Developer/ Backend Developer",
   bio: "Fourth year Computer Engineering student at KMITL specializing in .NET backend development. Hands-on experience building production-grade systems. Also capable of full-stack development with React. Detail-oriented and eager to grow in a collaborative engineering team.",
   email: "tanathip.pona@gmail.com",
   github: "https://github.com/p3tchtanathip",
-  linkedin: "https://linkedin.com/in/tanathip-pona-289589192",
+  linkedin: "https://linkedin.com/in/tanathip-pona",
   resume: "https://p3tchtanathip.github.io/resume/tanathip_resume.pdf",
   profiles: [profile1, profile2],
   location: "Bangkok, Thailand",
@@ -46,24 +48,32 @@ export const experiences: Experience[] = [
     role: "Software Engineer Intern",
     company: "Stream I.T. Consulting Ltd.",
     period: "Apr 2025 - Aug 2025",
-    description: "Built multi-level approval workflows with complex business rules, developed reusable reporting modules, and optimized large-scale data queries using SQL Stored Procedures.",
+    description: ["Contributed to 3 production enterprise systems across the full SDLC, including an internal audit platform for the Rubber Authority of Thailand", "Built a 3-5 level approval workflow with automatic routing, replacing a manual paper-based process", "Wrote stored procedures for complex multi-table queries with conditional logic"]
   },
   {
-    role: "Freelance Developer",
+    role: "Freelance",
     company: "AISIN AUTOPARTS (THAILAND) Co., Ltd.",
     period: "Sep 2025 - Feb 2026",
-    description: "Developed a machine monitoring dashboard using .NET (WinForms), integrating multiple nut-tightening controllers to collect and display torque and angle production data.",
+    description: ["Designed and shipped a high-performance manufacturing monitoring dashboard aggregating data from 5+ nut-tightening controllers per line across 2 factory sites", "Implemented auto-reconnect with retry and heartbeat logic, eliminating data loss during interruptions"]
   },
 ];
 
 export const projects: Project[] = [
   {
-    title: "Adaptive Programming Lab Management and Interactive Learning Platform",
-    description: "Built a real-time interactive learning platform with WebSocket supporting live engagement features. Designed an realtime quiz system with configurable difficulty and timing.",
+    title: "Adaptive Programming Lab Management and Interactive Learning Platform (APAL)",
+    description: "Built an automated grading platform with real-time feedback and classroom polls, a hybrid RBAC/ABAC permission model, and load testing via Grafana k6 before a live pilot with 25+ students at KMITL.",
     role: "Full-stack Developer",
     period: "2025 - 2026",
     tags: ["React (TypeScript)", "Go", "WebSocket", "PostgreSQL", "Redis", "MinIO", "Kafka"],
     images: [apalImage1, apalImage2, apalImage3, apalImage4]
+  },
+  {
+    title: "MicroWallet",
+    description: " Multi-currency wallet with AI-driven transaction categorization and a financial assistant. Built with Clean Architecture and CQRS, deployed on Kubernetes (k3s) via Docker and GCE with Redis caching for performance at scale.",
+    role: "Backend Developer",
+    period: "2026",
+    tags: ["ASP.NET Core", "PostgreSQL", "Redis", "xUnit", "Moq", "Google Cloud Engine (GCE)", "Kubernetes"],
+    images: [walletImage1, walletImage2]
   },
   {
     title: "Movie2Free",
@@ -94,12 +104,12 @@ export const projects: Project[] = [
 export const competitions: Competition[] = [
   {
     title: "1st Place Winner - Tech Tournament Day 2026 #1",
-    description: "Competed in a software engineering workshop challenge, solving real-world algorithmic problems and presenting solutions to a panel of tech experts from Bangkok Bank",
+    description: "Demonstrated strong problem-solving skills by solving software engineering and algorithmic challenges judged by engineers from Bangkok Bank under time pressure",
     period: "Apr 2026"
   },
   {
     title: "ICPC Thailand National Competition Contest",
-    description: "Represented KMITL's Computer Engineering department in ICPC Thailand, solving algorithmic problems.",
+    description: "Represented KMITL Computer Engineering in Thailand's ICPC regional programming contest",
     period: "Sep 2024"
   },
   {
@@ -111,7 +121,7 @@ export const competitions: Competition[] = [
 
 export const skills: SkillCategory[] = [
   { category: "Frontend", items: ["TypeScript", "React", "Next.js", "Tailwind CSS", "MUI"] },
-  { category: "Backend", items: ["ASP.NET Core", "Node.js", "Express.js", "Entity Framework", "REST APIs", "WebSocket", "Redis", "MinIO", "Kafka"] },
+  { category: "Backend", items: ["C#", "ASP.NET Core", "Go", "Node.js", "Express.js", "Entity Framework", "REST APIs", "SignalR", "WebSocket", "Redis", "MinIO", "Kafka"] },
   { category: "Database", items: ["SQL Server", "PostgreSQL", "MongoDB"] },
-  { category: "Tools", items: ["Git", "Docker", "Grafana k6", "Figma"] },
+  { category: "Tools", items: ["Git", "Docker", "Kubernetes", "Google Cloud Platform (GCP)", "Grafana k6", "Figma"] },
 ];

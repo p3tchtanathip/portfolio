@@ -23,7 +23,11 @@ export function ExperienceSection() {
                       <span className="text-sm text-muted-foreground">{exp.period}</span>
                     </div>
                     <p className="text-primary font-medium mb-2">{exp.company}</p>
-                    <p className="text-muted-foreground">{exp.description}</p>
+                    <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                      {exp.description.map((desc, i) => (
+                        <li key={i}>{desc}</li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
 

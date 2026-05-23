@@ -22,7 +22,7 @@ export interface Experience {
   role: string;
   company: string;
   period: string;
-  description: string;
+  description: string[];
 }
 
 export interface Project {
