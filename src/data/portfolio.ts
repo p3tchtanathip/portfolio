@@ -88,7 +88,7 @@ export const projects: Project[] = [
     description: "Built a full-stack web platform for hackathon event management, including participant registration, event listing, and a structured funding system.",
     role: "Back-end Developer",
     period: "2024",
-    tags: ["Node.js", "Express.js", "MongoDB"],
+    tags: ["Next.js", "Express.js", "MongoDB"],
     images: [eventgenda1, eventgenda2, eventgenda3]
   },
   {
