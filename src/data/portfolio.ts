@@ -21,7 +21,7 @@ export const personalInfo: PersonalInfo = {
   email: "tanathip.pona@gmail.com",
   github: "https://github.com/p3tchtanathip",
   linkedin: "https://linkedin.com/in/tanathip-pona",
-  resume: "https://p3tchtanathip.github.io/resume/tanathip_resume.pdf",
+  resume: "https://p3tchtanathip.github.io/resume",
   profiles: [profile1, profile2],
   location: "Bangkok, Thailand",
 };
