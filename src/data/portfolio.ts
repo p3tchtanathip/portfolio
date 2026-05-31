@@ -17,7 +17,7 @@ import walletImage2 from "@/assets/wallet_2.png";
 export const personalInfo: PersonalInfo = {
   name: "Tanathip Pona",
   title: "Software Developer/ Backend Developer",
-  bio: "Fourth year Computer Engineering student at KMITL specializing in .NET backend development. Hands-on experience building production-grade systems. Also capable of full-stack development with React. Detail-oriented and eager to grow in a collaborative engineering team.",
+  bio: "Fresh Computer Engineering graduate from KMITL with hands-on experience building production systems in C# and ASP.NET Core. Comfortable across the stack with React on the frontend. Have worked on real projects from internship through freelance.",
   email: "tanathip.pona@gmail.com",
   github: "https://github.com/p3tchtanathip",
   linkedin: "https://linkedin.com/in/tanathip-pona",
