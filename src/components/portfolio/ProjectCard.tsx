@@ -21,7 +21,7 @@ export function ProjectCard({ project }: { project: Project; index: number }) {
     <Card>
       <CardContent className="p-6">
         {hasImages && (
-          <div className="mb-6 h-360 flex items-center justify-center">
+          <div className="mb-6 h-90 flex items-center justify-center">
             <div className="relative flex items-center justify-center w-full h-full">
 
               <img
