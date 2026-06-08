@@ -1,4 +1,4 @@
-import type { Competition, Education, Experience, PersonalInfo, Project, SkillCategory } from "@/models/portfolio";
+import type { Activity, Education, Experience, PersonalInfo, Project, SkillCategory } from "@/models/portfolio";
 import profile1 from "@/assets/profile_1.png";
 import profile2 from "@/assets/profile_2.jpg";
 import apalImage1 from "@/assets/apal_1.png";
@@ -101,7 +101,7 @@ export const projects: Project[] = [
   },
 ];
 
-export const competitions: Competition[] = [
+export const activities: Activity[] = [
   {
     title: "1st Place Winner - Tech Tournament Day 2026 #1",
     description: "Demonstrated strong problem-solving skills by solving software engineering and algorithmic challenges judged by engineers from Bangkok Bank under time pressure",
@@ -111,6 +111,16 @@ export const competitions: Competition[] = [
     title: "ICPC Thailand National Competition Contest",
     description: "Represented KMITL Computer Engineering in Thailand's ICPC regional programming contest",
     period: "Sep 2024"
+  },
+  {
+    title: "AI Thailand Hackathon 2024 - AI Cooking",
+    description: "Built a dialect-to-standard Thai/English machine translation system by fine-tuning Typhoon (Thai LLM) on a curated corpus, running on the LANTA supercomputer",
+    period: "Jun 2024"
+  },
+  {
+    title: "42 Bangkok × AWS Hackathon - Future x Smart Hub, Smart Technology using Al",
+    description: "Prototyped a Smart Football Glasses Assistant using OpenCV and YOLO for real-time player and space detection to support in-game decision-making",
+    period: "August 2023"
   },
   {
     title: "Hackathon by Digital Youth Network",

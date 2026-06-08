@@ -13,7 +13,7 @@ const navItems = [
   { id: "education", label: "Education", icon: GraduationCap },
   { id: "experience", label: "Experience", icon: Briefcase },
   { id: "projects", label: "Projects", icon: FolderCode },
-  { id: "competitions", label: "Competitions", icon: Trophy },
+  { id: "activities", label: "Activities", icon: Trophy },
   { id: "skills", label: "Skills", icon: Code },
 ];
 

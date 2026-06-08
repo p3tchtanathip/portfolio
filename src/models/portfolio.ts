@@ -34,7 +34,7 @@ export interface Project {
   images?: string[];
 }
 
-export interface Competition {
+export interface Activity {
   title: string;
   description: string;
   period: string;
