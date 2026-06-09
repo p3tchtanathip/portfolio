@@ -114,12 +114,12 @@ export const activities: Activity[] = [
   },
   {
     title: "AI Thailand Hackathon 2024 - AI Cooking",
-    description: "Built a dialect-to-standard Thai/English machine translation system by fine-tuning Typhoon (Thai LLM) on a curated corpus, running on the LANTA supercomputer",
+    description: "Explored machine translation for Thai dialects by fine-tuning Typhoon (Thai LLM) on a curated corpus using the LANTA supercomputer",
     period: "Jun 2024"
   },
   {
     title: "42 Bangkok × AWS Hackathon - Future x Smart Hub, Smart Technology using Al",
-    description: "Prototyped a Smart Football Glasses Assistant using OpenCV and YOLO for real-time player and space detection to support in-game decision-making",
+    description: "Researched and designed a concept for a Smart Football Glasses Assistant using OpenCV and YOLO for real-time player and space detection",
     period: "August 2023"
   },
   {
