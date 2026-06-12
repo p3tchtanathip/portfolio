@@ -1,4 +1,3 @@
-import "./App.css";
 import { Navigation } from "./components/portfolio/Navigation";
 import { ProfileSection } from "./components/portfolio/ProfileSection";
 import { ExperienceSection } from "./components/portfolio/ExperienceSection";
@@ -9,7 +8,7 @@ import { SkillsSection } from "./components/portfolio/SkillsSection";
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background text-foreground">
       <Navigation />
       <main>
         <ProfileSection />

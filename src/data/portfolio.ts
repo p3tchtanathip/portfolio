@@ -17,6 +17,14 @@ import versus1 from "@/assets/versus_1.png";
 import versus2 from "@/assets/versus_2.png";
 import versus3 from "@/assets/versus_3.png";
 
+export const roles = [
+  "Software Developer",
+  "Software Engineer",
+  ".NET Developer",
+  "Back End Developer",
+  "Full-stack Developer",
+]
+
 export const personalInfo: PersonalInfo = {
   name: "Tanathip Pona",
   title: "Software Developer/ Backend Developer",

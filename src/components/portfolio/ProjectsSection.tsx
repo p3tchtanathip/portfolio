@@ -1,52 +1,22 @@
-import { useEffect, useRef, useState } from "react";
-import { projects } from "@/data/portfolio";
-import { ProjectCard } from "./ProjectCard";
+import { projects } from "@/data/portfolio"
+import { ProjectCard } from "./ProjectCard"
+import { AnimatedSection } from "./AnimatedSection"
 
 export function ProjectsSection() {
-  const [visibleProjects, setVisibleProjects] = useState<Set<number>>(new Set());
-  const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const index = Number(entry.target.getAttribute("data-index"));
-          if (entry.isIntersecting) {
-            setVisibleProjects((prev) => new Set(prev).add(index));
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
-
-    projectRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section id="projects" className="pt-40 px-4">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
+    <AnimatedSection id="projects" className="pt-[80px] md:pt-[120px] px-6">
+      <div className="max-w-[760px] mx-auto">
+        <p className="text-[11px] font-sans uppercase tracking-widest text-muted-foreground mb-3">
+          Projects
+        </p>
+        <div className="w-12 h-px bg-border mb-8" />
 
-        <div className="space-y-8">
+        <div className="grid gap-5">
           {projects.map((project, index) => (
-            <div
-              key={index}
-              ref={(el) => { projectRefs.current[index] = el; }}
-              data-index={index}
-              className={`transition-all duration-500 ${visibleProjects.has(index)
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-8"
-                }`}
-            >
-              <ProjectCard project={project} index={index} />
-            </div>
+            <ProjectCard key={index} project={project} index={index} />
           ))}
         </div>
       </div>
-    </section>
-  );
+    </AnimatedSection>
+  )
 }
