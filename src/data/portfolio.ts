@@ -13,6 +13,9 @@ import eventgenda3 from "@/assets/eventgenda_3.png";
 import tdlsImage from "@/assets/tdls.png";
 import walletImage1 from "@/assets/wallet_1.png";
 import walletImage2 from "@/assets/wallet_2.png";
+import versus1 from "@/assets/versus_1.png";
+import versus2 from "@/assets/versus_2.png";
+import versus3 from "@/assets/versus_3.png";
 
 export const personalInfo: PersonalInfo = {
   name: "Tanathip Pona",
@@ -48,39 +51,47 @@ export const experiences: Experience[] = [
     role: "Software Engineer Intern",
     company: "Stream I.T. Consulting Ltd.",
     period: "Apr 2025 - Aug 2025",
-    description: ["Contributed to 3 production enterprise systems across the full SDLC, including an internal audit platform for the Rubber Authority of Thailand", "Built a 3-5 level approval workflow with automatic routing, replacing a manual paper-based process", "Wrote stored procedures for complex multi-table queries with conditional logic"]
+    description: ["Built an approval workflow for the Rubber Authority of Thailand's audit platform, replacing a paper-based process with automatic routing to the next approver", "Developed REST APIs and stored procedures for complex multi-table queries across 3 production enterprise systems"]
   },
   {
     role: "Freelance",
     company: "AISIN AUTOPARTS (THAILAND) Co., Ltd.",
     period: "Sep 2025 - Feb 2026",
-    description: ["Designed and shipped a high-performance manufacturing monitoring dashboard aggregating data from 5+ nut-tightening controllers per line across 2 factory sites", "Implemented auto-reconnect with retry and heartbeat logic, eliminating data loss during interruptions"]
+    description: ["Designed and shipped a manufacturing monitoring dashboard aggregating data from 5+ nut-tightening controllers per line across 2 factory sites", "Implemented auto-reconnect with retry and heartbeat logic, eliminating data loss during interruptions"]
   },
 ];
 
 export const projects: Project[] = [
   {
+    title: "Versus",
+    description: "Versus is a crowd-sourced ranking platform where users battle-vote across four categories (movies, series, music, and sports) to build tier lists shaped by collective opinion. It uses a smart pairing algorithm to surface the most meaningful matchups first, so rankings converge faster the more people play. Content is pulled live from TMDB, Last.fm, and TheSportsDB, and users need no account since identity is handled through browser session tokens. The more people vote, the more accurate the rankings get.",
+    role: "Full-stack Developer",
+    period: "2026",
+    tags: ["ASP.NET Core", "React", "TypeScript", "SQL Server", "Docker", "Azure"],
+    images: [versus1, versus2, versus3]
+  },
+  {
+    title: "MicroWallet",
+    description: "Developed a multi-currency digital wallet backend using CQRS, idempotent transactions, and optimistic concurrency control via PostgreSQL with Redis-cached exchange rates. Integrated an LLM-powered financial assistant (Groq/Llama 3.3) that auto-categorizes transactions and answers natural-language spending queries, with rate limiting and prompt-injection safeguards.",
+    role: "Back-end Developer",
+    period: "2026",
+    tags: ["ASP.NET Core", "PostgreSQL", "Redis", "xUnit", "Moq", "Google Cloud Platform (GCP)"],
+    images: [walletImage1, walletImage2]
+  },
+  {
     title: "Adaptive Programming Lab Management and Interactive Learning Platform (APAL)",
-    description: "Built an automated grading platform with real-time feedback and classroom polls, a hybrid RBAC/ABAC permission model, and load testing via Grafana k6 before a live pilot with 25+ students at KMITL.",
+    description: "Built a full-stack automated grading platform that processes submissions through Kafka and returns grades via WebSocket, with real-time classroom polls for live student interaction. Designed a hybrid RBAC/ABAC with org/team-level access control, pilot with 25+ students at KMITL.",
     role: "Full-stack Developer",
     period: "2025 - 2026",
     tags: ["React (TypeScript)", "Go", "WebSocket", "PostgreSQL", "Redis", "MinIO", "Kafka"],
     images: [apalImage1, apalImage2, apalImage3, apalImage4]
   },
   {
-    title: "MicroWallet",
-    description: " Multi-currency wallet with AI-driven transaction categorization and a financial assistant. Built with Clean Architecture and CQRS, deployed on Kubernetes (k3s) via Docker and GCE with Redis caching for performance at scale.",
-    role: "Backend Developer",
-    period: "2026",
-    tags: ["ASP.NET Core", "PostgreSQL", "Redis", "xUnit", "Moq", "Google Cloud Engine (GCE)", "Kubernetes"],
-    images: [walletImage1, walletImage2]
-  },
-  {
     title: "Movie2Free",
-    description: "Developed a web app enabling users to search for friends and schedule movie-watching sessions together, with a real-time group chat feature.",
+    description: "Built a real-time collaborative web app for coordinating movie plans with integrated group chat. Implemented SignalR-based chat rooms with automatic expiration managed by a background service.",
     role: "Full-stack Developer",
     period: "2024",
-    tags: ["C#", "ASP.NET Core MVC", "SignalR"],
+    tags: ["C#", "ASP.NET Core MVC", "SignalR", "PostgreSQL"],
     images: [movieImage1, movieImage2]
   },
   {
@@ -133,5 +144,5 @@ export const skills: SkillCategory[] = [
   { category: "Frontend", items: ["TypeScript", "React", "Next.js", "Tailwind CSS", "MUI"] },
   { category: "Backend", items: ["C#", "ASP.NET Core", "Go", "Node.js", "Express.js", "Entity Framework", "REST APIs", "SignalR", "WebSocket", "Redis", "MinIO", "Kafka"] },
   { category: "Database", items: ["SQL Server", "PostgreSQL", "MongoDB"] },
-  { category: "Tools", items: ["Git", "Docker", "Kubernetes", "Google Cloud Platform (GCP)", "Grafana k6", "Figma"] },
+  { category: "Tools", items: ["Git", "Docker", "Google Cloud Platform (GCP)", "Figma"] },
 ];
