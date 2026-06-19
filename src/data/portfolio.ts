@@ -5,6 +5,13 @@ import apalImage1 from "@/assets/apal_1.png";
 import apalImage2 from "@/assets/apal_2.png";
 import apalImage3 from "@/assets/apal_3.png";
 import apalImage4 from "@/assets/apal_4.png";
+import apalImage5 from "@/assets/apal_5.png";
+import apalImage6 from "@/assets/apal_6.png";
+import apalImage7 from "@/assets/apal_7.png";
+import apalImage8 from "@/assets/apal_8.png";
+import apalImage9 from "@/assets/apal_9.png";
+import apalImage10 from "@/assets/apal_10.png";
+import apalImage11 from "@/assets/apal_11.png";
 import movieImage1 from "@/assets/movie_1.png";
 import movieImage2 from "@/assets/movie_2.png";
 import eventgenda1 from "@/assets/eventgenda_1.png";
@@ -80,7 +87,7 @@ export const projects: Project[] = [
   },
   {
     title: "MicroWallet",
-    description: "Developed a multi-currency digital wallet backend using CQRS, idempotent transactions, and optimistic concurrency control via PostgreSQL with Redis-cached exchange rates. Integrated an LLM-powered financial assistant (Groq/Llama 3.3) that auto-categorizes transactions and answers natural-language spending queries, with rate limiting and prompt-injection safeguards.",
+    description: "Built a personal finance tracking system for managing multiple currency balances, idempotent transactions, and optimistic concurrency control on PostgreSQL, plus Redis-cached exchange rates for currency conversion. Integrated an LLM-powered financial assistant (Groq/Llama 3.3) that auto-categorizes transactions and answers natural-language spending queries, with rate limiting and prompt-injection safeguards.",
     role: "Back-end Developer",
     period: "2026",
     tags: ["ASP.NET Core", "PostgreSQL", "Redis", "xUnit", "Moq", "Google Cloud Platform (GCP)"],
@@ -88,11 +95,11 @@ export const projects: Project[] = [
   },
   {
     title: "Adaptive Programming Lab Management and Interactive Learning Platform (APAL)",
-    description: "Built a full-stack automated grading platform that processes submissions through Kafka and returns grades via WebSocket, with real-time classroom polls for live student interaction. Designed a hybrid RBAC/ABAC with org/team-level access control, pilot with 25+ students at KMITL.",
+    description: "Built a full-stack automated grading platform that processes submissions through Kafka and returns details via WebSocket, with real-time classroom polls for live student interaction. Designed a hybrid RBAC/ABAC with org/team-level access control, pilot with 25+ students at KMITL.",
     role: "Full-stack Developer",
     period: "2025 - 2026",
     tags: ["React (TypeScript)", "Go", "WebSocket", "PostgreSQL", "Redis", "MinIO", "Kafka"],
-    images: [apalImage1, apalImage2, apalImage3, apalImage4]
+    images: [apalImage1, apalImage2, apalImage3, apalImage4, apalImage5, apalImage6, apalImage7, apalImage8, apalImage9, apalImage10, apalImage11]
   },
   {
     title: "Movie2Free",
@@ -152,5 +159,5 @@ export const skills: SkillCategory[] = [
   { category: "Frontend", items: ["TypeScript", "React", "Next.js", "Tailwind CSS", "MUI"] },
   { category: "Backend", items: ["C#", "ASP.NET Core", "Go", "Node.js", "Express.js", "Entity Framework", "REST APIs", "SignalR", "WebSocket", "Redis", "MinIO", "Kafka"] },
   { category: "Database", items: ["SQL Server", "PostgreSQL", "MongoDB"] },
-  { category: "Tools", items: ["Git", "Docker", "Google Cloud Platform (GCP)", "Figma"] },
+  { category: "Tools", items: ["Git", "Docker", "Figma", "Azure", "Google Cloud Platform (GCP)"] },
 ];
